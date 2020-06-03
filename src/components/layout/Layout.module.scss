@@ -1,0 +1,61 @@
+@import "assets/scss/colors";
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  z-index: 1;
+  background-color: $lightest-blue;
+}
+
+.contentWrapper {
+  padding: 3rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 100%;
+}
+
+.logo,
+.link {
+  display: block;
+  line-height: 3;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+.link1 {
+  background-color: $french-blue;
+}
+
+.link2 {
+  background-color: $blue-green;
+}
+
+.link3 {
+  background-color: $pacific-blue;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: $dark-cornflower-blue;
+  color: white;
+  font-size: 3rem;
+
+  ul {
+    list-style: none;
+    list-style-image: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    flex: 1;
+    text-decoration: none;
+  }
+}

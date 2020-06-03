@@ -1,0 +1,10 @@
+@import "assets/scss/colors";
+
+.gridContainer {
+  border: 1px solid $midnight-blue;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+}

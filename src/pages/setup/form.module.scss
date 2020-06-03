@@ -1,0 +1,18 @@
+@import "assets/scss/colors";
+
+.form {
+  padding: 4rem;
+  background-color: $light-cyan;
+}
+
+.row {
+  margin-bottom: 1.6rem;
+}
+
+.submitBtn {
+  padding-top: 2rem;
+}
+
+.error {
+  color: $live-red;
+}

@@ -1,0 +1,14 @@
+@import "assets/scss/colors";
+
+.table {
+  border-collapse: collapse;
+  caption-side: bottom;
+  background-color: $light-cyan;
+  width: 100%;
+  text-align: center;
+}
+
+.tableHeader {
+  background-color: $blue-green;
+  color: #fff;
+}

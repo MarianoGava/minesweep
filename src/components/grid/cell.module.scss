@@ -1,0 +1,19 @@
+@import "assets/scss/colors";
+
+$cell-size: 3rem;
+
+.cell {
+  background-color: $pacific-blue;
+  flex-shrink: 0;
+  width: $cell-size;
+  height: $cell-size;
+  line-height: $cell-size;
+  border: 1px solid $midnight-blue;
+  text-align: center;
+  font-weight: bold;
+  outline: 0;
+}
+
+.cellClicked {
+  background-color: $french-blue;
+}

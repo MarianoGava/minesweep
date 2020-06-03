@@ -1,0 +1,65 @@
+// Buttons
+// -------
+@import "assets/scss/colors";
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.6rem 2.4rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+
+  &.btn-small {
+    padding: 0.4rem 1.6rem;
+    font-size: 1.2rem;
+  }
+
+  &.btn-medium {
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  &.btn-large {
+    padding: 0.8rem 3.2rem;
+    font-size: 1.8rem;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+@each $key, $value in $btn-colors {
+  .btn-#{$key} {
+    color: #fff;
+    background-color: $value;
+    border-color: $value;
+
+    &:not([disabled]):hover {
+      background-color: darken($value, 5%);
+      border-color: darken($value, 5%);
+    }
+  }
+}
+
+.btn-clean {
+  border: 0;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+}
+
+button[disabled] {
+  &.btn {
+    opacity: 0.7;
+    cursor: default;
+  }
+}
