@@ -1,0 +1,7 @@
+# Browsers that we support
+
+defaults
+> 0.2%
+
+[ssr]
+node 12

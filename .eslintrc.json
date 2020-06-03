@@ -1,0 +1,45 @@
+{
+  "extends": ["react-app", "airbnb", "prettier", "prettier/react"],
+  "plugins": ["react-hooks", "prettier"],
+  "rules": {
+    "no-debugger": 1,
+    "no-unused-vars": 1,
+    "curly": ["error", "all"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "jsx-a11y/label-has-associated-control": 0,
+    "no-nested-ternary": 0,
+    "no-unused-expressions": [
+      "error",
+      { "allowShortCircuit": true, "allowTernary": true }
+    ],
+    "consistent-return": ["error", { "treatUndefinedAsUnspecified": true }],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "printWidth": 100,
+        "quoteProps": "consistent"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.js"],
+      "rules": {
+        "no-param-reassign": [2, { "props": false }]
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}
